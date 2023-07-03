@@ -1,0 +1,74 @@
+body {
+    overflow: hidden;
+    font-family: 'Software Tester 7', sans-serif;
+    background: linear-gradient(to right , #f5bc5f,#4da19d,#f86f69,#3905,#aeb6bd);
+  }
+  
+  button{
+    border: 1px dotted rgba(17, 214, 115, 0.2);
+    background-color: rebeccapurple;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 70px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+  }
+  #hour,#millisecond,#minute,#second{
+    border: 3px solid rgb(99, 11, 207);
+    border-radius: 50%;
+    padding: 10px;
+
+  }
+  button:hover{
+    background: transparent;
+    border: 1px dotted rgb(8, 12, 232);
+    color: rgb(0, 0, 0);
+  }
+  
+  #timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  #timer h1 {
+    user-select: none;
+    font-size: 7vw;
+    color:white;
+  }
+  
+  .time{
+    display: flex;
+    background: #cf1381;
+    padding: 50px;
+    border-radius: 10px;
+  }
+  .btns{
+    position: absolute;
+    bottom: 230px;
+  }
+  
+  #millisecond{
+    font-size: 5vw;
+  }
+  
+  @media(max-width:768px) {
+    #timer h1 {
+      font-size: 4rem;
+    }
+  }
+  
+  @media(max-width:480px) {
+    #timer h1 {
+      font-size: 3.5rem;
+    }
+  }
+  
+  @media(max-width:320px) {
+    #timer h1 {
+      font-size: 3rem;
+    }
+  }
